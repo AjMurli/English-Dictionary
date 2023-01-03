@@ -1,0 +1,129 @@
+/* https://dictionaryapi.dev/ */
+ @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bree+Serif&family=Clicker+Script&family=Courgette&family=Libre+Baskerville:wght@700&family=Lobster+Two:wght@700&family=Orelega+One&family=PT+Serif:ital,wght@1,700&family=Pacifico&family=Patua+One&family=Roboto+Slab:wght@600&family=Signika+Negative:wght@300&family=Yantramanav&display=swap'); 
+
+ 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #84d8f6;
+    /* background-color: #ae9cff; */
+    /* font-family: 'Lobster Two', cursive; */
+    font-family: 'Patua One', cursive;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+.searchBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchBox input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #00bbff;
+    /* border-bottom: 3px solid #ae9cff; */
+    font-size: 16px;
+    color: #00bbff;
+    font-weight: bolder;
+font-family: 'Patua One', cursive;
+}
+.searchBox input::placeholder{
+    color: #76d6f9;
+   font-family: 'Patua One', cursive;
+}
+
+.searchBox button {
+    cursor: pointer;
+    padding: 10px 0;
+    width: 25%;
+    background-color: #00bbff;
+    /* background-color: #ae9cff; */
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: .4rem;
+
+}
+.info{
+    margin-top: 14px;
+    color: gray;
+}
+
+.result {
+    position: relative;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.result button {
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.wordMeaning {
+    color: #575a7b;
+}
+
+.wordExample {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#sound{
+    display: none;
+    color: #00bbff;
+    position: fixed;
+    font-size: 20px;
+    cursor: pointer;
+}
+section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: #00bbff;
+    padding-top: 5px;
+}
